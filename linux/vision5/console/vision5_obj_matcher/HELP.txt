@@ -1,0 +1,35 @@
+Programa vision 5 object matcher  tem como objetivos usar a biblioteca opencv
+para identificar objetosem um ambiente através de uma câmera VGA simples.
+ 
+
+
+
+
+
+Modo Shell comandos
+
+Modo object detect
+
+ arg 0      arg 2     arg 3      arg 4              arg 5          argv 6
+$programa   feature    -p       match_type         img.jpg         img.jpg
+
+
+arg2    : ORB
+          FAST
+          FREAK
+          BRIEF
+
+arg 3   : -p  configura manualmente todos os parâmetros [entre imagens]
+          -vp configura manualmente todos os parâmetros [entre imagem e vídeo]
+          
+arg 4   :bfm brutal force 
+         flann most near neighborhood
+         knn  Knn match
+         radius matcher radial
+
+arg 5    : endereço da imagem [objeto]
+
+
+
+
+arg 6    : caso em modo imagem endereço da segunada imagem [ambiente]
